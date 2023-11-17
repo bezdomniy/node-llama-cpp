@@ -7,6 +7,9 @@ import {LlamaContext, type LlamaContextOptions, type LlamaContextRepeatPenalty} 
 import {
     LlamaChatSession, type LlamaChatSessionOptions, type LLamaChatPromptOptions, type LlamaChatSessionRepeatPenalty
 } from "./llamaEvaluator/LlamaChatSession.js";
+import {
+    LlamaStreamingChatSession
+} from "./llamaEvaluator/LlamaStreamingChatSession.js";
 import {AbortError} from "./AbortError.js";
 import {ChatPromptWrapper} from "./ChatPromptWrapper.js";
 import {EmptyChatPromptWrapper} from "./chatWrappers/EmptyChatPromptWrapper.js";
@@ -37,6 +40,7 @@ export {
     type LlamaContextOptions,
     type LlamaContextRepeatPenalty,
     LlamaChatSession,
+    LlamaStreamingChatSession,
     type LlamaChatSessionOptions,
     type LLamaChatPromptOptions,
     type LlamaChatSessionRepeatPenalty,
